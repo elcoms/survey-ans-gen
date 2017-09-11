@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Complimentor</title>
+</head>
+
+<body>
+<h1 style="color:orange;">Survey Answer Generator</h1>
+
+<script src="script.js"></script>
+<script src="clipboard.min.js"></script>
+<script>
+var clipboard = new Clipboard('.btn');
+clipboard.on('success', function(e) {
+    console.log(e);
+});
+clipboard.on('error', function(e) {
+    console.log(e);
+});
+</script>
+
+<h2>CCS</h2>
+<h3 id="cTopic">Waiting for you to copy...</h3>
+<input id="topic" value="Type the lesson here...">
+<button id="bTopic" class="btn" onclick="output(event);">Generate</button>
+<button id="copyCCS" class="btn" onclick="copied(event)" data-clipboard-target="#topic">Copy</button>
+
+
+
+<h2>Training Overall Instructor Assessment</h2>
+<h3 id="cName">Waiting for you to copy...</h3>
+<input id="name" value="Click the generate button!">
+<button id="bName" class="btn" onclick="output(event);">Generate</button>
+<button id="copyTOIA" class="btn" onclick="copied(event)" data-clipboard-target="#name">Copy</button>
+
+</body>
+
+</html>
