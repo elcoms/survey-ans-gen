@@ -2,37 +2,16 @@
 <html>
 
 <head>
-<title>Complimentor</title>
+  <title>SAG</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 
-<body>
-<h1 style="color:orange;">Survey Answer Generator</h1>
+<body style="background-color:#93bcff;">
+  <div class="title">Survey Answer Generator</div>
 
-<script src="script.js"></script>
-<script src="clipboard.min.js"></script>
-<script>
-var clipboard = new Clipboard('.btn');
-clipboard.on('success', function(e) {
-    console.log(e);
-});
-clipboard.on('error', function(e) {
-    console.log(e);
-});
-</script>
-
-<h2>CCS</h2>
-<h3 id="cTopic">Waiting for you to copy...</h3>
-<input id="topic" placeholder="Type the lesson here...">
-<button id="bTopic" class="btn" onclick="output(event);">Generate</button>
-<button id="copyCCS" class="btn" onclick="copied(event)" data-clipboard-target="#topic">Copy</button>
-
-
-
-<h2>Training Overall Instructor Assessment</h2>
-<h3 id="cName">Waiting for you to copy...</h3>
-<input id="name" placeholder="Click the generate button!">
-<button id="bName" class="btn" onclick="output(event);">Generate</button>
-<button id="copyTOIA" class="btn" onclick="copied(event)" data-clipboard-target="#name">Copy</button>
+  <div class="btn CSS">CSS</div>
+  <div class="space">^ Under Construction :)</div>
+  <div class="btn TOIA">TOIA</div>
 
 </body>
 

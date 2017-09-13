@@ -1,0 +1,56 @@
+@font-face {
+  font-family: introFont;
+  src: url("../fonts/Cabin-Medium.ttf");
+}
+
+/*{
+  border: solid black;
+}*/
+
+.title{
+  width: 100%;
+  color: white;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  padding: 150px 0;
+  text-shadow: 0px 3px grey;
+  font-size: 100px;
+  font-family: introFont, Helvetica, sans-serif;
+}
+
+.btn{
+  width: 500px;
+  margin: auto;
+  display: block;
+  text-align: center;
+  position: relative;
+  transition: transform 0.2s;
+  /*
+  border-top: solid grey 2px;
+  border-bottom: solid grey 10px;
+  border-left: solid grey 5px;
+  border-right: solid grey 5px;*/
+  color: white;
+  background-color: #8edbf9;
+  font-size: 100px;
+  font-family: introFont, Helvetica, sans-serif;
+}
+
+.btn.TOIA{
+  background-color: #f9bd75;
+}
+
+.btn:hover{
+  transform: scale(1.05);
+  border: solid dimgrey;
+  border-bottom: solid dimgrey 5px;
+}
+
+.space{
+  padding: 10px;
+  text-align: center;
+  color:white;
+  background-color: #e69191;
+  font-family: introFont, Helvetica, sans-serif;
+}
