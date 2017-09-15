@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS</title>
+  <link rel='stylesheet' type='text/css' href='../css/style.css'>
+</head>
+
+<body>
+  <h1 style="color:orange;">CSS</h1>
+
+  <script src="../js/CSSscript.js"></script>
+  <script src="../js/clipboard.min.js"></script>
+  <script>
+  var clipboard = new Clipboard('.btn');
+  clipboard.on('success', function(e) {
+      console.log(e);
+  });
+  clipboard.on('error', function(e) {
+      console.log(e);
+  });
+  </script>
+
+  <h3 id="cTopic">Please input your lesson in the box below.</h3>
+  <input id="topic" placeholder="Type the lesson here...">
+  <button id="bTopic" class="btn" onclick="output(event);">Generate</button>
+  <button id="copyCCS" class="btn" onclick="copied(event)" data-clipboard-target="#topic">Copy</button>
+  <a class="btn back" href="../index.html">Back</a>
+</body>
+
+
+</html>
