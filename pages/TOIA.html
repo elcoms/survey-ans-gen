@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TOIA</title>
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+
+<body>
+  <h1 style="color:orange;">Training Overall Instructor Assessment</h1>
+
+  <script src="../js/TOIAscript.js"></script>
+  <script src="../js/clipboard.min.js"></script>
+  <script>
+  var clipboard = new Clipboard('.btn');
+  clipboard.on('success', function(e) {
+      console.log(e);
+  });
+  clipboard.on('error', function(e) {
+      console.log(e);
+  });
+  </script>
+
+  <h3 id="cName">Click the generate button!</h3>
+  <input id="name" placeholder="There! ->">
+  <button id="bName" class="btn" onclick="output(event);">Generate</button>
+  <button id="copyTOIA" class="btn" onclick="copied(event)" data-clipboard-target="#name">Copy</button>
+  <a class="btn back" href="../index.html">Back</a>
+</body>
+
+
+
+</html>

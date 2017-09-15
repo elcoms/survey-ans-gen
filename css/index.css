@@ -25,12 +25,8 @@
   display: block;
   text-align: center;
   position: relative;
+  text-decoration: none;
   transition: transform 0.2s;
-  /*
-  border-top: solid grey 2px;
-  border-bottom: solid grey 10px;
-  border-left: solid grey 5px;
-  border-right: solid grey 5px;*/
   color: white;
   background-color: #8edbf9;
   font-size: 100px;
