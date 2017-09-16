@@ -5,9 +5,8 @@
   <link rel='stylesheet' type='text/css' href='../css/style.css'>
 </head>
 
-<body>
-  <h1 style="color:orange;">CSS</h1>
-
+<body style="background-color: #93bcff; text-align: center;">
+  <h1 class="title">Common Core Survey</h1>
   <script src="../js/CSSscript.js"></script>
   <script src="../js/clipboard.min.js"></script>
   <script>
@@ -20,10 +19,10 @@
   });
   </script>
 
-  <h3 id="cTopic">Please input your lesson in the box below.</h3>
-  <input id="topic" placeholder="Type the lesson here...">
+  <h3 id="cTopic" class="text">Please input your lesson in the box below.</h3>
+  <input id="topic" class="input" placeholder="Type the lesson here...">
   <button id="bTopic" class="btn" onclick="output(event);">Generate</button>
-  <button id="copyCCS" class="btn" onclick="copied(event)" data-clipboard-target="#topic">Copy</button>
+  <button id="copy" class="btn" onclick="copied(event)" data-clipboard-target="#topic">Copy</button>
   <a class="btn back" href="../index.html">Back</a>
 </body>
 
