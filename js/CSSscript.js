@@ -2,11 +2,12 @@ var lessons = [];
 
 function copied(event){
 
-  var randColor = '#'+(0x1000000+(Math.random())*0xffffff).toString(16).substr(1,6);
   var element = event.target;
 
-  document.getElementById("cTopic").innerHTML = "Copied!";
-  document.getElementById("cTopic").style.color = randColor;
+  document.getElementById("cTopic").innerHTML = "Enter another lesson!";
+
+  document.getElementById("copy").innerHTML = "Copied!";
+  document.getElementById("copy").style.backgroundColor = "#1f63d6";
 }
 
 function output(event){
@@ -15,8 +16,7 @@ function output(event){
 
   if(document.getElementById("topic") != null)
   {
-      var topic = document.getElementById("topic").value;
-
+    var topic = document.getElementById("topic").value;
 
     //randomize and output
     var randomNum = 0;
@@ -29,8 +29,10 @@ function output(event){
     var splitLines = randomLine.split("|");
 
     document.getElementById("topic").value = splitLines[0] + topic + splitLines[1];
-    document.getElementById("cTopic").innerHTML = "Waiting for you to copy...";
+    document.getElementById("cTopic").innerHTML = "Waiting for you to copy. . .";
     document.getElementById("cTopic").style.color = 'black';
+    document.getElementById("copy").innerHTML = "Copy";
+    document.getElementById("copy").style.backgroundColor = "#8edbf9";
   }
 }
 
