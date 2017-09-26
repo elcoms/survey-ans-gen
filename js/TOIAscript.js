@@ -4,10 +4,9 @@ function copied(event){
 
   var element = event.target;
 
-  document.getElementById("cName").innerHTML = "Enter another lesson!";
-
-    document.getElementById("copy").innerHTML = "Copied!";
-    document.getElementById("copy").style.backgroundColor = "#1f63d6";
+  document.getElementById("cName").innerHTML = "Generate another answer!";
+  document.getElementById("copy").innerHTML = "Copied!";
+  document.getElementById("copy").style.backgroundColor = "#1f63d6";
 }
 
 function output(event){

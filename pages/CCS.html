@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>CSS</title>
+  <title>CCS</title>
   <link rel='stylesheet' type='text/css' href='../css/style.css'>
 </head>
 
 <body style="background-color: #93bcff; text-align: center;">
   <h1 class="title">Common Core Survey</h1>
-  <script src="../js/CSSscript.js"></script>
+  <script src="../js/CCSscript.js"></script>
   <script src="../js/clipboard.min.js"></script>
   <script>
   var clipboard = new Clipboard('.btn');
@@ -19,10 +19,10 @@
   });
   </script>
 
-  <h3 id="cTopic" class="text">Please input your lesson in the box below.</h3>
-  <input id="topic" class="input" placeholder="Type the lesson here...">
-  <button id="bTopic" class="btn" onclick="output(event);">Generate</button>
-  <button id="copy" class="btn" onclick="copied(event)" data-clipboard-target="#topic">Copy</button>
+  <h3 id="cTopic" class="text">Click on the generate button below!</h3>
+  <input id="topic" class="input" placeholder="Below!">
+  <button id="bTopic" class="btn" onclick="output(event);"  data-clipboard-target="#topic">Generate</button>
+  <button id="copy" class="btn" onclick="copied(event)">Copy</button>
   <a class="btn back" href="../index.html">Back</a>
 </body>
 
