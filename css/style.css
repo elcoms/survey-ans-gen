@@ -61,11 +61,3 @@
   border: solid dimgrey;
   border-bottom: solid dimgrey 5px;
 }
-
-.space{
-  padding: 10px;
-  text-align: center;
-  color:white;
-  background-color: #e69191;
-  font-family: general, Helvetica, sans-serif;
-}
