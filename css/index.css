@@ -1,0 +1,48 @@
+@font-face {
+  font-family: general;
+  src: url("../fonts/Cabin-Medium.ttf");
+}
+
+/*{
+  border: solid black;
+}*/
+
+.title{
+  width: 100%;
+  color: white;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  padding: 150px 0;
+  text-shadow: 0px 3px grey;
+  font-size: 100px;
+  font-family: general, Helvetica, sans-serif;
+}
+
+.btn{
+  width: 500px;
+  margin: auto;
+  display: block;
+  text-align: center;
+  position: relative;
+  text-decoration: none;
+  transition: transform 0.2s;
+  color: white;
+  background-color: #8edbf9;
+  font-size: 100px;
+  font-family: general, Helvetica, sans-serif;
+}
+
+.btn.TOIA{
+  background-color: #f9bd75;
+}
+
+.btn:hover{
+  transform: scale(1.05);
+  border: solid dimgrey;
+  border-bottom: solid dimgrey 5px;
+}
+
+.space{
+  padding: 2px;
+}
