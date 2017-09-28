@@ -19,10 +19,9 @@
   });
   </script>
 
-  <h3 id="cTopic" class="text">Click on the generate button below!</h3>
+  <h3 id="cTopic" class="text">Click on the copy button below!</h3>
   <input id="topic" class="input" placeholder="Below!">
-  <button id="bTopic" class="btn" onclick="output(event);"  data-clipboard-target="#topic">Generate</button>
-  <button id="copy" class="btn" onclick="copied(event)">Copy</button>
+  <button id="bTopic" class="btn" onclick="output(event);setTimeout(copied, 1500);"  data-clipboard-target="#topic">Copy</button>
   <a class="btn back" href="../index.html">Back</a>
 </body>
 

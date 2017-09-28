@@ -1,12 +1,8 @@
 var instructors = [];
 
-function copied(event){
-
-  var element = event.target;
-
-  document.getElementById("cName").innerHTML = "Generate another answer!";
-  document.getElementById("copy").innerHTML = "Copied!";
-  document.getElementById("copy").style.backgroundColor = "#1f63d6";
+function copied(){
+  document.getElementById("bName").innerHTML = "Copy";
+  document.getElementById("bName").style.backgroundColor = "#8edbf9";
 }
 
 function output(event){
@@ -25,10 +21,10 @@ function output(event){
     var randomLine = instructors[randomNum];
 
     document.getElementById("name").value = randomLine;
-    document.getElementById("cName").innerHTML = "Waiting for you to copy. . .";
-    document.getElementById("cName").style.color = 'black';
-    document.getElementById("copy").innerHTML = "Copy";
-    document.getElementById("copy").style.backgroundColor = "#8edbf9";
+    document.getElementById("cName").innerHTML = "Generate another answer!";
+    document.getElementById("cName").style.color = '#'+(0x1000000+(Math.random())*0xffffff).toString(16).substr(1,6);
+    document.getElementById("bName").innerHTML = "Copied!";
+    document.getElementById("bName").style.backgroundColor = "#1f63d6";
   }
 }
 
