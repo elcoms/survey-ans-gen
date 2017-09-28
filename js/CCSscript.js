@@ -21,7 +21,6 @@ function output(event){
   document.getElementById("cTopic").style.color = '#'+(0x1000000+(Math.random())*0xffffff).toString(16).substr(1,6);
   document.getElementById("bTopic").innerHTML = "Copied!";
   document.getElementById("bTopic").style.backgroundColor = "#1f63d6";
-
 }
 
 function getData(callback, file)
