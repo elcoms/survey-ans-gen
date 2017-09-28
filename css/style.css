@@ -31,14 +31,14 @@
 }
 
 .input{
-  margin: 5px auto;
+  margin: 50px auto;
   display: block;
 }
 
 .btn{
-  width: 300px;
-  display: inline-block;
-  margin: 10px 2px;
+  width: 400px;
+  display: block;
+  margin: 5px auto;
   text-align: center;
   position: relative;
   text-decoration: none;
@@ -51,8 +51,6 @@
 }
 
 .btn.back{
-  width: 250px;
-  font-size: 50px;
   background-color: #f0826e;
 }
 
