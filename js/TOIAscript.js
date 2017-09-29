@@ -9,6 +9,9 @@ function output(event){
 
   var element = event.target;
 
+  if(instructors.length <= 1)
+    getData(processData, "../data/instructors.txt");
+
   if(document.getElementById("name") != null)
   {
     //randomize and output
@@ -25,9 +28,22 @@ function output(event){
     document.getElementById("cName").style.color = '#'+(0x1000000+(Math.random())*0xffffff).toString(16).substr(1,6);
     document.getElementById("bName").innerHTML = "Copied!";
     document.getElementById("bName").style.backgroundColor = "#1f63d6";
+
+    deleteElement(instructors, randomNum);
   }
 }
 
+function deleteElement(array, num){
+  if(array[num+1] != null)
+  {
+    array[num] = array[num+1];
+    return deleteElement(array, num+1);
+  }
+  else {
+    array.pop();
+    return array;
+  }
+}
 
 function getData(callback, file)
 {
