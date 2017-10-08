@@ -37,6 +37,12 @@
   background-color: #f9bd75;
 }
 
+.btn.feedback{
+  width: 300px;
+  margin-top: 50px;
+  font-size: 30px;
+}
+
 .btn:hover{
   transform: scale(1.05);
   border: solid dimgrey;
