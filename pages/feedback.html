@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Leave a feedback!</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+  </head>
+
+  <body style="background-color: #5991ff">
+    <script src="../js/feedback.js"></script>
+
+    <h1 class="title">Feedback</h1>
+
+    <h3 id="text" class="text">Choose a category.</h3>
+    <a id="bAnswer" class="btn option" onclick="displayAnswer();">Answer</a>
+    <a id="bImprove" class="btn option" onclick="displayImprovement();"
+      style="font-size: 40px; height: 75px; line-height:75px; vertical-align: middle;">
+      General Improvement</a>
+    <input id="input" class="input" style="display: none;" maxlength="280" required>
+    <button id="bSubmit" class="btn" style="display: none;" onclick="submit();">Submit</button>
+
+    <a class="btn back" onclick="back()">Back</a>
+
+    <script src="https://www.gstatic.com/firebasejs/4.4.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyCvpiA2Dt9WaDPRoKAXU2lh6_GNykhjgfM",
+        authDomain: "survey-ans-generator.firebaseapp.com",
+        databaseURL: "https://survey-ans-generator.firebaseio.com",
+        projectId: "survey-ans-generator",
+        storageBucket: "survey-ans-generator.appspot.com",
+        messagingSenderId: "858946259840"
+      };
+      firebase.initializeApp(config);
+    </script>
+
+  </body>
+
+</html>

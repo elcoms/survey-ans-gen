@@ -7,11 +7,33 @@
 </head>
 
 <body style="background-color:#93bcff;">
+
   <div class="title">Survey Answer Generator</div>
 
   <a class="btn CCS" href="pages/CCS.html">CCS</a>
   <div class="space"></div>
   <a class="btn TOIA" href="pages/TOIA.html">TOIA</a>
+  <div class="space"></div>
+  <a class="btn feedback" href="pages/feedback.html">Suggest an answer!</a>
+
+  <script src="https://www.gstatic.com/firebasejs/4.4.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyCvpiA2Dt9WaDPRoKAXU2lh6_GNykhjgfM",
+      authDomain: "survey-ans-generator.firebaseapp.com",
+      databaseURL: "https://survey-ans-generator.firebaseio.com",
+      projectId: "survey-ans-generator",
+      storageBucket: "survey-ans-generator.appspot.com",
+      messagingSenderId: "858946259840"
+    };
+    firebase.initializeApp(config);
+  </script>
+  <script>
+  var database = firebase.database();
+
+  database.enableLogging(true);
+  </script>
 
 </body>
 
