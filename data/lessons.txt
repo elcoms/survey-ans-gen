@@ -14,3 +14,7 @@ It was a fascinating look into how it works.| The timing was just right.;
 It was an interesting lesson.| There was enough time to engage us in the lesson.;
 The topic wasn't difficult to understand and it was pretty straightforward.| Adequate time was given to understand the topic.;
 The lesson was an eye-opener.| The timing was just right.;
+The lesson was very informative.| The timing was planned well.;
+I understood a lot from the lesson.| The time was properly managed.;
+I took a lot from the lesson.| There was sufficient time to absorb everything.;
+It is to my understanding that the instructions given was straightforward.| Everyone was given enough time to complete the tasks.
