@@ -23,7 +23,7 @@ function output(event){
     //split and insert topic
     var randomLine = instructors[randomNum];
 
-    document.getElementById("name").value = randomLine;
+    document.getElementById("name").innerHTML = randomLine;
     document.getElementById("cName").innerHTML = "Generate another answer!";
     document.getElementById("cName").style.color = '#'+(0x1000000+(Math.random())*0xffffff).toString(16).substr(1,6);
     document.getElementById("bName").innerHTML = "Copied!";

@@ -20,7 +20,7 @@ function output(event){
   randomNum = Math.floor(Math.random() * (lessons.length-2) + 0);
   randomNum2 = Math.floor(Math.random() * (timing.length-2) + 0);
 
-  document.getElementById("topic").value = lessons[randomNum] + timing[randomNum2];
+  document.getElementById("topic").innerHTML = lessons[randomNum] + timing[randomNum2];
   document.getElementById("cTopic").innerHTML = "Generate another answer!";
   document.getElementById("cTopic").style.color = '#'+(0x1000000+(Math.random())*0xffffff).toString(16).substr(1,6);
   document.getElementById("bTopic").innerHTML = "Copied!";
